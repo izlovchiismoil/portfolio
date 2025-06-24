@@ -2,37 +2,35 @@ import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer>
-            <section>
-                <div>
-                    <img src={`/images/logo.png`} alt="image" style={{ width: "9rem" }}/>
+        <footer className="ps-6 pe-6 bg-shade flex flex-col pt-5 pb-5">
+            <section className="md:flex md:items-center md:justify-between mb-5 pt-5 pb-5">
+                <div className="flex justify-center md:justify-start">
+                    <img src={`/images/logo.png`} alt="image" className="md:w-24  w-20" />
                 </div>
-                <div>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Portfolio</Link>
-                        </li>
-                        <li>
-                            <Link to="/">About me</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Testimonials</Link>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <img src={"/images/facebook.png"} alt="facebook.png" />
-                    <img src={"/images/instagram.png"} alt="instagram.png" />
-                    <img src={"/images/twitter.png"} alt="twitter.png" />
-                    <img src={"/images/linkedin.png"} alt="linkedin.png" />
+                <ul className="flex flex-col items-center justify-center md:flex-row md:items-center md:justify-between gap-3 text-base mb-5">
+                    <li>
+                        <a href="/" className="px-3 py-2">Home</a>
+                    </li>
+                    <li>
+                        <a href="#projects" className="rounded-md px-3 py-2">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#about" className="rounded-md px-3 py-2">About me</a>
+                    </li>
+                    <li>
+                        <a href="#testimonials" className="rounded-md px-3 py-2">Testimonials</a>
+                    </li>
+                </ul>
+                <div className="flex justify-center items-center gap-3">
+                    <img src={"/images/facebook.png"} alt="facebook.png" className="h-5 w-auto" />
+                    <img src={"/images/instagram.png"} alt="instagram.png" className="h-5 w-auto" />
+                    <img src={"/images/twitter.png"} alt="twitter.png" className="h-5 w-auto" />
+                    <img src={"/images/linkedin.png"} alt="linkedin.png" className="h-5 w-auto" />
                 </div>
             </section>
-            <section>
-                <p>Made with 💖 by Airdokan</p>
-                <ul>
+            <section className="flex flex-col items-center justify-between md:flex-row pt-5 pb-5 border-t">
+                <p className="mb-5">Made with 💖 by Airdokan</p>
+                <ul className="flex flex-col items-center justify-between gap-5 md:flex-row">
                   <li>
                       <Link to="/">Privacy Policy</Link>
                   </li>
