@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="ps-6 pe-6 bg-shade flex flex-col pt-5 pb-5">
             <section className="md:flex md:items-center md:justify-between mb-5 pt-5 pb-5">
                 <div className="flex justify-center md:justify-start">
-                    <img src={`/images/logo.png`} alt="image" className="md:w-24  w-20" />
+                    <img src={`/images/logo.webp`} alt="image" className="md:w-24  w-20" />
                 </div>
                 <ul className="flex flex-col items-center justify-center md:flex-row md:items-center md:justify-between gap-3 text-base mb-5">
                     <li>
@@ -22,10 +22,10 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div className="flex justify-center items-center gap-3">
-                    <img src={"/images/facebook.png"} alt="facebook.png" className="h-5 w-auto" />
-                    <img src={"/images/instagram.png"} alt="instagram.png" className="h-5 w-auto" />
-                    <img src={"/images/twitter.png"} alt="twitter.png" className="h-5 w-auto" />
-                    <img src={"/images/linkedin.png"} alt="linkedin.png" className="h-5 w-auto" />
+                    <img src={"/images/facebook.webp"} alt="facebook.webp" className="h-5 w-auto" />
+                    <img src={"/images/instagram.webp"} alt="instagram.webp" className="h-5 w-auto" />
+                    <img src={"/images/twitter.webp"} alt="twitter.webp" className="h-5 w-auto" />
+                    <img src={"/images/linkedin.webp"} alt="linkedin.webp" className="h-5 w-auto" />
                 </div>
             </section>
             <section className="flex flex-col items-center justify-between md:flex-row pt-5 pb-5 border-t">

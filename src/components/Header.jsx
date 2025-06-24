@@ -42,7 +42,7 @@ const Header = () => {
         <header className="pt-5 pb-5 pe-5 md:ps-6 md:pe-6 shadow relative">
             <nav className="flex items-center justify-between">
                 <a href="/">
-                    <img className="md:w-24 w-20" src="/images/logo.png" alt="logo"/>
+                    <img className="md:w-24 w-20" src="/images/logo.webp" alt="logo"/>
                 </a>
                 <ul className="hidden md:flex items-center gap-3 text-base">
                     {menus.map((item, i) => (

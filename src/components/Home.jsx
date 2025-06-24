@@ -12,7 +12,7 @@ const Home = () => {
                     <Link to="/" className="bg-primary text-light p-3 rounded">Get in Touch</Link>
                 </div>
                 <div>
-                    <img src={"/images/ustoz.png"} className="w-8/12" alt={"Group_11_1.png"} />
+                    <img src={"/images/ustoz.webp"} className="w-8/12" alt={"Group_11_1.webp"} />
                 </div>
             </section>
             <section>
@@ -21,29 +21,29 @@ const Home = () => {
             </section>
             <section className="md:flex md:items-center md:justify-between md:gap-5">
                 <div className="bg-shade rounde p-5d">
-                    <img src={"/images/product-chain_1.png"} alt={"product-chain_1"} className="h-14 mb-5" />
+                    <img src={"/images/product-chain_1.webp"} alt={"product-chain_1"} className="h-14 mb-5" />
                     <h4 className="font-bold mb-5">Strategy & Direction</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                 </div>
                 <div className="bg-shade rounded p-5">
-                    <img src={"/images/tag_1.png"} alt={"tag_1.png"} className="h-14 mb-5" />
+                    <img src={"/images/tag_1.webp"} alt={"tag_1.webp"} className="h-14 mb-5" />
                     <h4 className="font-bold mb-5">Branding & Logo</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                 </div>
                 <div className="bg-shade rounded p-5">
-                    <img src={"/images/feather-pen_2.png"} alt={"feather-pen_2.png"} className="h-14 mb-5" />
+                    <img src={"/images/feather-pen_2.webp"} alt={"feather-pen_2.webp"} className="h-14 mb-5" />
                     <h4 className="font-bold mb-5">UI & UX Design</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                 </div>
                 <div className="bg-shade rounded p-5">
-                    <img src={"/images/feather-pen_1.png"} alt={"feather-pen_1.png"} className="h-14 mb-5" />
+                    <img src={"/images/feather-pen_1.webp"} alt={"feather-pen_1.webp"} className="h-14 mb-5" />
                     <h4 className="font-bold mb-5">Webflow Development</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                 </div>
             </section>
             <section className="md:flex md:items-center md:justify-center mb-20" id="about">
                 <div className="md:mb-0 mb-10">
-                    <img src={"/images/ustoz.png"} alt={"ustoz.png"} className="w-9/12" />
+                    <img src={"/images/ustoz.webp"} alt={"ustoz.webp"} className="w-9/12" />
                 </div>
                 <div>
                     <p className="text-sm font-bold mb-5">About</p>
@@ -61,7 +61,7 @@ const Home = () => {
             </section>
             <section className="md:flex md:items-center md:justify-between pb-20 gap-3">
                 <div className="shadow rounded mb-5">
-                    <img src={"/images/personal_portfolio_website.png"} alt={"personal_portfolio_website.png"} />
+                    <img src={"/images/personal_portfolio_website.webp"} alt={"personal_portfolio_website.webp"} />
                     <div className="p-5">
                         <h5 className="font-bold mb-5">Ahuse</h5>
                         <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
@@ -74,7 +74,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="shadow rounded mb-5">
-                    <img src={"/images/personal_portfolio_website_community.png"} alt={"personal_portfolio_website_community.png"} />
+                    <img src={"/images/personal_portfolio_website_community.webp"} alt={"personal_portfolio_website_community.webp"} />
                     <div className="p-5">
                         <h5 className="font-bold mb-5">App Dashboard</h5>
                         <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
@@ -87,7 +87,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="shadow rounded mb-5">
-                    <img src={"/images/personal_portfolio_website_community_1.png"} alt={"personal_portfolio_website_community_1.png"} />
+                    <img src={"/images/personal_portfolio_website_community_1.webp"} alt={"personal_portfolio_website_community_1.webp"} />
                     <div className="p-5">
                         <h5 className="font-bold mb-5">Easy Rent</h5>
                         <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
@@ -107,15 +107,15 @@ const Home = () => {
             <section className="md:flex md:items-center md:justify-between pt-20 pb-20 md:gap-5 bg-shade">
                 <div className="border border-primary rounded p-5 mb-5">
                     <div className="flex items-center justify-start gap-2 mb-5">
-                        <img src={"/images/star.png"} alt={"star.png"} />
-                        <img src={"/images/star.png"} alt={"star.png"} />
-                        <img src={"/images/star.png"} alt={"star.png"} />
-                        <img src={"/images/star.png"} alt={"star.png"} />
-                        <img src={"/images/star.png"} alt={"star.png"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
                     </div>
                     <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
                     <div className="flex items-center justify-start gap-3">
-                        <img src={"/images/Dianne_Russell.png"} alt={"Dianne_Russell.png"} className="w-14" />
+                        <img src={"/images/Dianne_Russell.webp"} alt={"Dianne_Russell.webp"} className="w-14" />
                         <div>
                             <h6 className="font-bold">Dianne Russell</h6>
                             <span>Starbucks</span>
@@ -124,15 +124,15 @@ const Home = () => {
                 </div>
                 <div className="border border-primary rounded p-5 mb-5">
                     <div className="flex items-center justify-start gap-2 mb-5">
-                        <img src={"/images/star.png"} alt={"star.png"} />
-                        <img src={"/images/star.png"} alt={"star.png"} />
-                        <img src={"/images/star.png"} alt={"star.png"} />
-                        <img src={"/images/star.png"} alt={"star.png"} />
-                        <img src={"/images/star.png"} alt={"star.png"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
                     </div>
                     <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
                     <div className="flex items-center justify-start gap-3">
-                        <img src={"/images/Kristin_Watson.png"} alt={"Kristin_Watson.png"} className="w-14" />
+                        <img src={"/images/Kristin_Watson.webp"} alt={"Kristin_Watson.webp"} className="w-14" />
                         <div>
                             <h6>Kristin Watson</h6>
                             <span>Louis Vuitton</span>
@@ -141,15 +141,15 @@ const Home = () => {
                 </div>
                 <div className="border border-primary rounded p-5">
                     <div className="flex items-center justify-start gap-2 mb-5">
-                        <img src={"/images/star.png"} alt={"star.png"} />
-                        <img src={"/images/star.png"} alt={"star.png"} />
-                        <img src={"/images/star.png"} alt={"star.png"} />
-                        <img src={"/images/star.png"} alt={"star.png"} />
-                        <img src={"/images/star.png"} alt={"star.png"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
+                        <img src={"/images/star.webp"} alt={"star.webp"} />
                     </div>
                     <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
                     <div className="flex items-center justify-start gap-3">
-                        <img src={"/images/Kathryn_Murphy.png"} alt={"Kathryn_Murphy.png"} className="w-14" />
+                        <img src={"/images/Kathryn_Murphy.webp"} alt={"Kathryn_Murphy.webp"} className="w-14" />
                         <div>
                             <h6>Kathryn Murphy</h6>
                             <span>McDonald's</span>
