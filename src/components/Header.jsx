@@ -51,7 +51,7 @@ const Header = () => {
                         </li>
                     ))}
                 </ul>
-                <Link to={`#`} className="hidden md:inline-block text-base p-2 border border-primary rounded text-primary">Contact me</Link>
+                <a href="#contact" className="hidden md:inline-block text-base p-2 border border-primary rounded text-primary">Contact me</a>
                 {open ? (
                     <div className="absolute bg-light w-full top-0 pt-3 pb-5 shadow-2xl">
                         <ul className="mb-5">
@@ -66,7 +66,7 @@ const Header = () => {
                                 </li>
                             ))}
                         </ul>
-                        <Link to={`#`} className="text-base p-2 border border-primary rounded text-primary">Contact me</Link>
+                        <Link to={`#contact`} className="text-base p-2 border border-primary rounded text-primary">Contact me</Link>
                     </div>
                 ) :(
                     <button className="md:hidden text-primary" onClick={handleOpenMenu}>

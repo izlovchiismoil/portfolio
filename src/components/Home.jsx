@@ -8,16 +8,133 @@ const Home = () => {
                 <div className="mb-5">
                     <p className="text-sm mb-5">Hey, I am Ismoil</p>
                     <h1 className="text-4xl font-bold mb-5">I am <span className="text-primary">React.js & Node.js</span> developer</h1>
-                    <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                    <Link to="/" className="bg-primary text-light p-3 rounded">Get in Touch</Link>
                 </div>
                 <div>
-                    <img src={"/images/ustoz.webp"} className="w-8/12" alt={"Group_11_1.webp"} />
+                    <img src={"/images/ustoz.webp"} className="w-5/12" alt={"Group_11_1.webp"} />
+                </div>
+            </section>
+            <section className="mb-20" id="projects">
+                <p className="font-bold text-sm mb-5">Recent Projects</p>
+                <div className="md:flex md:items-center md:justify-between">
+                    <h1 className="font-bold text-4xl mb-5">My projects</h1>
+                    <Link to={"https://github.com/izlovchiismoil?tab=repositories"} target="_blank" className="p-3 bg-purple rounded text-light"><GlobeAltIcon className="inline-flex h-10 w-10 text-light" /> Visit Repositories</Link>
+                </div>
+            </section>
+            <section className="md:flex md:items-center md:justify-between pb-20 gap-3">
+                <div className="shadow rounded mb-5">
+                    <img src={"/images/blog_post.webp"} className="w-full h-48 object-cover" alt={"blog_post.webp"} />
+                    <div className="p-5">
+                        <h5 className="font-bold mb-5">Blog Post</h5>
+                        <Link to={"https://blog.izlovchidev.uz"} target="_blank" className="inline-flex items-center border-b border-b-primary pb-2">
+                            Visit
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </Link>
+                    </div>
+                </div>
+                <div className="shadow rounded mb-5">
+                    <img src={"/images/activate_user.webp"} className="w-full h-48 object-cover" alt={"activate_user.webp"} />
+                    <div className="p-5">
+                        <h5 className="font-bold mb-5">Authenticate by google account</h5>
+                        <Link to={"https://github.com/izlovchiismoil/authenticate_by_google_account.git"} target="_blank" className="inline-flex items-center border-b border-b-primary pb-2">
+                            Visit
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </Link>
+                    </div>
+                </div>
+                <div className="shadow rounded mb-5">
+                    <img src={"/images/lotin_krill.webp"} className="w-full h-48 object-cover" alt={"lotin_krill.webp"} />
+                    <div className="p-5">
+                        <h5 className="font-bold mb-5">Uzbek Latin to Uzbek Cyrillic converter</h5>
+                        <Link to={"https://github.com/izlovchiismoil/lotin-krill.git"} target="_blank" className="inline-flex items-center border-b border-b-primary pb-2">
+                            Visit
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </Link>
+                    </div>
+                </div>
+                <div className="shadow rounded mb-5">
+                    <img src={"/images/flower_shop.webp"} className="w-full h-48 object-cover" alt={"flower_shop.webp"} />
+                    <div className="p-5">
+                        <h5 className="font-bold mb-5">Flower shop</h5>
+                        <Link to={"https://github.com/izlovchiismoil/flower_shop.git"} target="_blank" className="inline-flex items-center border-b border-b-primary pb-2">
+                            Visit
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </Link>
+                    </div>
                 </div>
             </section>
             <section>
-                <p className="text-sm mb-5">My skills</p>
-                <h3 className="text-4xl font-bold mb-5">My Expertise</h3>
+                <p className="text-sm mb-5">Certification</p>
+                <h3 className="text-4xl font-bold mb-5">My Certificates</h3>
+            </section>
+            <section className="md:flex md:items-center md:justify-between pb-20 gap-3">
+                <div className="shadow rounded mb-5">
+                    <img src={"/images/nodejs.webp"} className="w-full h-48 object-cover" alt={"nodejs.webp"} />
+                    <div className="p-5">
+                        <h5 className="font-bold mb-5">MOHIRDEV Node.js</h5>
+                        <Link to={"https://assets.mohirdev.uz/users/6626635aabb2dadb4f3d78f9/certificates/cert-dd5b61a1-2912-4cc3-9d2b-e8c9000aadfd-prac-V5UxrC8Bm.pdf"} target="_blank" className="inline-flex items-center border-b border-b-primary pb-2">
+                            Visit
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </Link>
+                    </div>
+                </div>
+                <div className="shadow rounded mb-5">
+                    <img src={"/images/sololearn_web_fundamental.webp"} className="w-full h-48 object-cover" alt={"sololearn_web_fundamental.webp"} />
+                    <div className="p-5">
+                        <h5 className="font-bold mb-5">Sololearn web development fundamentals</h5>
+                        <Link to={"https://www.sololearn.com/certificates/CT-8IWHT7AK"} target="_blank" className="inline-flex items-center border-b border-b-primary pb-2">
+                            Visit
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </Link>
+                    </div>
+                </div>
+                <div className="shadow rounded mb-5">
+                    <img src={"/images/sololearn_css.webp"} className="w-full h-48 object-cover" alt={"sololearn_css.webp"} />
+                    <div className="p-5">
+                        <h5 className="font-bold mb-5">Sololearn CSS</h5>
+                        <Link to={"https://www.sololearn.com/certificates/CT-FBLNFT8S"} target="_blank" className="inline-flex items-center border-b border-b-primary pb-2">
+                            Visit
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </Link>
+                    </div>
+                </div>
+                <div className="shadow rounded mb-5">
+                    <img src={"/images/sololearn_js.webp"} className="w-full h-48 object-cover" alt={"sololearn_js.webp"} />
+                    <div className="p-5">
+                        <h5 className="font-bold mb-5">Sololearn JavaScript</h5>
+                        <Link to={"https://www.sololearn.com/certificates/CT-2MIMPPEH"} target="_blank" className="inline-flex items-center border-b border-b-primary pb-2">
+                            Visit
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </Link>
+                    </div>
+                </div>
+                <div className="shadow rounded mb-5">
+                    <img src={"/images/sololearn_php.webp"} className="w-full h-48 object-cover" alt={"sololearn_php.webp"} />
+                    <div className="p-5">
+                        <h5 className="font-bold mb-5">Sololearn PHP</h5>
+                        <Link to={"https://www.sololearn.com/certificates/CT-P8W5ZBRT"} target="_blank" className="inline-flex items-center border-b border-b-primary pb-2">
+                            Visit
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </Link>
+                    </div>
+                </div>
             </section>
             <section className="md:flex md:items-center md:justify-between md:gap-5">
                 <div className="bg-shade rounde p-5d">
@@ -43,7 +160,7 @@ const Home = () => {
             </section>
             <section className="md:flex md:items-center md:justify-center mb-20" id="about">
                 <div className="md:mb-0 mb-10">
-                    <img src={"/images/ustoz.webp"} alt={"ustoz.webp"} className="w-9/12" />
+                    <img src={"/images/ustoz.webp"} alt={"ustoz.webp"} className="w-6/12" />
                 </div>
                 <div>
                     <p className="text-sm font-bold mb-5">About</p>
@@ -52,54 +169,7 @@ const Home = () => {
                     <p className="mb-5">Sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae. Amet pellentesque sit pulvinar lorem mi a, euismod risus r.</p>
                 </div>
             </section>
-            <section className="mb-20" id="projects">
-                <p className="font-bold text-sm mb-5">Recent Projects</p>
-                <div className="md:flex md:items-center md:justify-between">
-                    <h1 className="font-bold text-4xl mb-5">My projects</h1>
-                    <Link to={"#"} className="p-3 bg-purple rounded text-light"><GlobeAltIcon className="inline-flex h-10 w-10 text-light" /> Visit My Dribbble</Link>
-                </div>
-            </section>
-            <section className="md:flex md:items-center md:justify-between pb-20 gap-3">
-                <div className="shadow rounded mb-5">
-                    <img src={"/images/personal_portfolio_website.webp"} alt={"personal_portfolio_website.webp"} />
-                    <div className="p-5">
-                        <h5 className="font-bold mb-5">Ahuse</h5>
-                        <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                        <Link to={"#"} className="inline-flex items-center border-b border-b-primary pb-2">
-                            View In Dribbble
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                        </svg>
-                        </Link>
-                    </div>
-                </div>
-                <div className="shadow rounded mb-5">
-                    <img src={"/images/personal_portfolio_website_community.webp"} alt={"personal_portfolio_website_community.webp"} />
-                    <div className="p-5">
-                        <h5 className="font-bold mb-5">App Dashboard</h5>
-                        <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                        <Link to={"#"} className="inline-flex items-center border-b border-b-primary pb-2">
-                            View In Dribbble
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                            </svg>
-                        </Link>
-                    </div>
-                </div>
-                <div className="shadow rounded mb-5">
-                    <img src={"/images/personal_portfolio_website_community_1.webp"} alt={"personal_portfolio_website_community_1.webp"} />
-                    <div className="p-5">
-                        <h5 className="font-bold mb-5">Easy Rent</h5>
-                        <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                        <Link to={"#"} className="inline-flex items-center border-b border-b-primary pb-2">
-                            View In Dribbble
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                            </svg>
-                        </Link>
-                    </div>
-                </div>
-            </section>
+
             <section className="bg-shade pt-20" id="testimonials">
                 <p className="mb-3 text-sm font-bold">Clients Feedback</p>
                 <h2 className="font-bold text-4xl">Customer testimonials</h2>
@@ -157,7 +227,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="flex items-center justify-center pt-20 pb-20">
+            <section className="flex items-center justify-center pt-20 pb-20" id="contact">
                 <form className="md:w-6/12 w-full">
                     <div className="mb-10">
                         <p className="font-bold text-center mb-5 text-sm">Get In Touch</p>
