@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
 import {useState} from "react";
+import {baseValues} from "../base.js";
 
 const Home = () => {
     const [messageObj, setMessageObj] = useState({
@@ -14,7 +15,7 @@ const Home = () => {
     });
     const submitHandler = (e) => {
         e.preventDefault();
-        fetch("http://localhost:3003/send", {
+        fetch(baseValues.backend_path, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(messageObj)
