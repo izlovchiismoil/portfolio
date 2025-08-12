@@ -1,7 +1,34 @@
 import {Link} from "react-router-dom";
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
+import {useState} from "react";
 
 const Home = () => {
+    const [messageObj, setMessageObj] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phoneNumber: "",
+        topic: "",
+        message: "",
+        agreement: false
+    });
+    const submitHandler = (e) => {
+        e.preventDefault();
+        fetch("http://localhost:3003/send", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(messageObj)
+        })
+            .then(res => res.json())
+            .catch(console.error);
+    }
+    const changeHandler = (e) => {
+        return setMessageObj({
+            ...messageObj,
+            [e.target.name]: e.target.value
+        });
+    }
+
     return (
         <>
             <section className="md:flex md:items-center md:justify-between bg-shade pt-5 mb-5 md:pt-0">
@@ -136,28 +163,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="md:flex md:items-center md:justify-between md:gap-5">
-                <div className="bg-shade rounde p-5d">
-                    <img src={"/images/product-chain_1.webp"} alt={"product-chain_1"} className="h-14 mb-5" />
-                    <h4 className="font-bold mb-5">Strategy & Direction</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                </div>
-                <div className="bg-shade rounded p-5">
-                    <img src={"/images/tag_1.webp"} alt={"tag_1.webp"} className="h-14 mb-5" />
-                    <h4 className="font-bold mb-5">Branding & Logo</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                </div>
-                <div className="bg-shade rounded p-5">
-                    <img src={"/images/feather-pen_2.webp"} alt={"feather-pen_2.webp"} className="h-14 mb-5" />
-                    <h4 className="font-bold mb-5">UI & UX Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                </div>
-                <div className="bg-shade rounded p-5">
-                    <img src={"/images/feather-pen_1.webp"} alt={"feather-pen_1.webp"} className="h-14 mb-5" />
-                    <h4 className="font-bold mb-5">Webflow Development</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                </div>
-            </section>
             <section className="md:flex md:items-center md:justify-center mb-20" id="about">
                 <div className="md:mb-0 mb-10">
                     <img src={"/images/ustoz.webp"} alt={"ustoz.webp"} className="w-6/12" />
@@ -169,66 +174,8 @@ const Home = () => {
                     <p className="mb-5">Sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae. Amet pellentesque sit pulvinar lorem mi a, euismod risus r.</p>
                 </div>
             </section>
-
-            <section className="bg-shade pt-20" id="testimonials">
-                <p className="mb-3 text-sm font-bold">Clients Feedback</p>
-                <h2 className="font-bold text-4xl">Customer testimonials</h2>
-            </section>
-            <section className="md:flex md:items-center md:justify-between pt-20 pb-20 md:gap-5 bg-shade">
-                <div className="border border-primary rounded p-5 mb-5">
-                    <div className="flex items-center justify-start gap-2 mb-5">
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                    </div>
-                    <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
-                    <div className="flex items-center justify-start gap-3">
-                        <img src={"/images/Dianne_Russell.webp"} alt={"Dianne_Russell.webp"} className="w-14" />
-                        <div>
-                            <h6 className="font-bold">Dianne Russell</h6>
-                            <span>Starbucks</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="border border-primary rounded p-5 mb-5">
-                    <div className="flex items-center justify-start gap-2 mb-5">
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                    </div>
-                    <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
-                    <div className="flex items-center justify-start gap-3">
-                        <img src={"/images/Kristin_Watson.webp"} alt={"Kristin_Watson.webp"} className="w-14" />
-                        <div>
-                            <h6>Kristin Watson</h6>
-                            <span>Louis Vuitton</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="border border-primary rounded p-5">
-                    <div className="flex items-center justify-start gap-2 mb-5">
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                        <img src={"/images/star.webp"} alt={"star.webp"} />
-                    </div>
-                    <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
-                    <div className="flex items-center justify-start gap-3">
-                        <img src={"/images/Kathryn_Murphy.webp"} alt={"Kathryn_Murphy.webp"} className="w-14" />
-                        <div>
-                            <h6>Kathryn Murphy</h6>
-                            <span>McDonald's</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section className="flex items-center justify-center pt-20 pb-20" id="contact">
-                <form className="md:w-6/12 w-full">
+                <form className="md:w-6/12 w-full" onSubmit={submitHandler}>
                     <div className="mb-10">
                         <p className="font-bold text-center mb-5 text-sm">Get In Touch</p>
                         <h3 className="font-bold text-center text-4xl mb-5">Contact me</h3>
@@ -237,36 +184,36 @@ const Home = () => {
                     <div className="grid md:grid-cols-2 grid-cols-1 gap-5 mb-5">
                         <div className="flex flex-col">
                             <label htmlFor="firstName">First name</label>
-                            <input id="firstName" type="text" className="h-8 border border-primary rounded outline-none indent-2"/>
+                            <input id="firstName" type="text" name="firstName" onChange={changeHandler} className="h-8 border border-primary rounded outline-none indent-2"/>
                         </div>
                         <div className="flex flex-col">
                             <label htmlFor="lastName">Last name</label>
-                            <input id="lastName" type="text" className="h-8 border border-primary rounded outline-none indent-2" />
+                            <input id="lastName" type="text" name="lastName" onChange={changeHandler} className="h-8 border border-primary rounded outline-none indent-2" />
                         </div>
                         <div className="flex flex-col">
                             <label htmlFor="email">Email name</label>
-                            <input id="email" type="email" className="h-8 border border-primary rounded outline-none indent-2" />
+                            <input id="email" type="email" name="email" onChange={changeHandler} className="h-8 border border-primary rounded outline-none indent-2" />
                         </div>
                         <div className="flex flex-col">
                             <label htmlFor="phoneNumber">Phone number</label>
-                            <input id="phoneNumber" type="tel" className="h-8 border border-primary rounded outline-none indent-2" />
+                            <input id="phoneNumber" type="tel" name="phoneNumber" onChange={changeHandler} className="h-8 border border-primary rounded outline-none indent-2" />
                         </div>
                     </div>
                     <div className="flex flex-col mb-5">
                         <label htmlFor="topic">Choose a topic</label>
-                        <select id="topic" className="border border-primary rounded outline-none h-8">
+                        <select id="topic" name="topic" onChange={changeHandler} className="border border-primary rounded outline-none h-8">
                             <option value="0">Select one...</option>
-                            <option value="0">Select one...</option>
-                            <option value="0">Select one...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
                         </select>
                     </div>
                     <div className="flex flex-col mb-5">
                         <label htmlFor="message">Message</label>
-                        <textarea id="message" rows="5" cols="30" placeholder="Type your message..." className="border border-primary rounded outline-none indent-2"></textarea>
+                        <textarea id="message" name="message" rows="5" cols="30" onChange={changeHandler} placeholder="Type your message..." className="border border-primary rounded outline-none indent-2"></textarea>
                     </div>
                     <div className="mb-5">
-                        <input type="checkbox" id="accept_terms" className="me-2" />
-                        <label htmlFor="accept_terms">I accept the terms</label>
+                        <input type="checkbox" id="agreement" name="agreement" onChange={changeHandler} className="me-2" />
+                        <label htmlFor="agreement">I accept the terms</label>
                     </div>
                     <div className="flex items-center justify-center">
                         <input type="submit" value="Submit" className="pt-3 pb-3 ps-8 pe-8 rounded text-light bg-primary" />

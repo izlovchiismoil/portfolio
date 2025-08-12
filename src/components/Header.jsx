@@ -17,11 +17,6 @@ const Header = () => {
             title: "About",
             link: "#about",
             isActive: false,
-        },
-        {
-            title: "Testimonials",
-            link: "#testimonials",
-            isActive: false,
         }
     ]);
     const [open, setOpen] = useState(false);
